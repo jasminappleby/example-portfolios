@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
-
+/* variables */
 :root {
     --primary: #0afee0;
     --secondary: #3f3365;
@@ -21,6 +22,89 @@ body {
     overflow-x: hidden;
 }
 
+/* intro styles */
+#intro {
+    padding: 0 20px 20px 20px;
+}
+
+.intro-text {
+    grid-column: 1/6;
+}
+
+.intro-img {
+    grid-column: 6/9;
+}
+
+.intro-img img {
+    width: 600px;
+}
+  
+.intro-text a {
+    margin: 20px 0;
+}
+
+/* button styles */
+.button {
+    background: none;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    display: inline-block;
+}
+
+.button:hover {
+    color: #222;
+    background-color: var(--primary);
+}
+
+.button:active {
+    outline: none;
+}
+
+input, textarea {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #f2f2f2;
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 2px solid #9893d8;
+}
+
+/* text styles */
+h1, h2, h3, h4 {
+    color: #dddbff;
+    font-weight: normal;
+}
+
+p, a, li {
+    color: #9893d8;
+}
+    
+h1, h3 {
+    font-size: 1.2em;
+}
+    
+h2 {
+    font-size: 1.6em;
+}
+    
+h4 {
+    font-size: 1.1em;
+}
+
+.leading {
+    font-size: 1.1em;
+}
+
+/* grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+}
+
 /* nav styles */
 .site-nav {
     margin: 0 20px;
@@ -37,26 +121,29 @@ body {
     border-bottom: 3px solid var(--primary);
 }
 
-/* intro styles */
-
-#intro {
-    padding: 0 20px 20px 20px;
+/* projects section */
+#project-portfolio {
+    background: url(https://cdn.wallpapersafari.com/40/38/h03P6y.jpeg)bottom/cover no-repeat;
+    padding: 30px 20px;
 }
 
-.intro-text {
-    grid-column: 1/6;
+#project-portfolio h3 {
+    text-align: center;
+    margin-bottom: 0;
 }
 
-.intro-img {
-    grid-column: 6/9;
+.projects a {
+    margin: 30px 0;
+    display: flex;
 }
 
-.intro-img img {
-    width: 200%;
+.projects a * {
+    margin: 0 10px;
+    max-width: 40px;
+    align-self: center;
 }
-  
-.intro-text a {
-    margin: 20px 0;
+
+.projects h4 {
+    color: #9994f7;
 }
-  
-  
+    
