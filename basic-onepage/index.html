@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="scripts.js" defer></script>
     <title>Portfolio</title>
 </head>
@@ -12,7 +13,61 @@
     <section class="container">
         <div class="box">
             <div class="work">
-                
+                <div class="about">
+                    <!-- Insert your name below, customise your message thats more *you* -->
+                    <h3>Hey! I'm Jasmin</h3>
+                    <!-- And don't forget your job title! (or what you are aspiring to become) -->
+                    <h4>Software Engineer</h4> 
+                    <!-- Describe what your button will feature when the user clicks on it -->
+                    <p>A small selection of current websites I have developed solo. I really enjoy creating designs and pretty UIs, please check them out!</p>
+                </div>
+                <!-- This is your button, which when clicked is going to show a pop up which links to 5 of your chosen projects. It is clunky I know, I am not sure how to streamline this down -->
+                <div class="modaly">
+                    <div class="modal fade show" id="exampleModalToggle" aria-hidden="true" aria aria-labelledby="exampleModalToggleLabel" tabindex="-1" role="dialog" style="display:block;">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Just the header, which you can leave blank or add a title -->
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalToggleLabel">Projects</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <!-- This is where the website links actually go, so slot them into the anchor tags -->
+                                <div class="modal-body">
+                                    <div class="porto port1">
+                                        <h5>
+                                            <a href="#" target="_blank"></a>
+                                        </h5>
+                                    </div>
+                                    <div class="porto port2">
+                                        <h5>
+                                            <a href="#" target="_blank"></a>
+                                        </h5>
+                                    </div>
+                                    <div class="porto port3">
+                                        <h5>
+                                            <a href="#" target="_blank"</a>
+                                        </h5>
+                                    </div>
+                                    <div class="porto port4">
+                                        <h5>
+                                            <a href="#" target="_blank"></a>
+                                        </h5>
+                                    </div>
+                                    <div class="porto port5">
+                                        <h5>
+                                            <a href="#" target="_blank"></a>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <!-- This is the footer, which is just consistant of a button to help the user exit this screen -->
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Projects</a>
+                </div>
             </div>
             <div class="online">
 
